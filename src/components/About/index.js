@@ -11,35 +11,44 @@ import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './index.scss'
+import Sidebar from '../Sidebar'
 
-const About = () => {
+export const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
+  const titleAbout = ['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']
+
   useEffect(() => {
-    return setTimeout(() => {
+    const timerId = setTimeout(() => {
       setLetterClass('text-animate-hover')
-    }, 3000)
-  }, [])
+    }, 200)
+  
+    return () => {
+      clearTimeout(timerId);
+    };
+  }, []);
+  
 
   return (
-    <>
+    <div>
+      <Sidebar />
       <div className="container about-page">
         <div className="text-zone">
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
+              strArray={titleAbout}
               idx={15}
             />
           </h1>
           <p>
-          I am currently a Junior Software Engineer at GH Branding, where I work on projects like Neoway, Qintess and São José solving problems both on the front-end and back-end.
+          I am currently a Full Software Engineer at GH Branding, where I work and have participated in several projects for clients such as Neoway, Qintess, BASF, CNA Construtora, MID Falconi and São José, solving problems both as front-end and back-end.
           </p>
           <p align="LEFT">
-          I am a very confident and ambitious person, I try to be always evolving. I like to work in a group and push situations ahead to help the group as much as possible.
+          I am a very confident and ambitious person. I enjoy working in a group and moving situations forward to help the group as much as possible.
           </p>
           <p>
-          If I need to define myself in one sentence, it would be a calm person who thinks positively, likes to play sports and always wants to be evolving.
+          If I needed to define myself in one sentence, it would be a calm person, who thinks positively, likes to play sports and always wants to be evolving.
           </p>
         </div>
 
@@ -67,8 +76,6 @@ const About = () => {
         </div>
       </div>
       <Loader type="pacman" />
-    </>
+    </div>
   )
 }
-
-export default About

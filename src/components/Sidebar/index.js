@@ -3,40 +3,32 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faLinkedin,
   faGithub,
-  faOptinMonster,
   faInstagram,
 } from '@fortawesome/free-brands-svg-icons'
-import { faHome, faUser, faEnvelope, faSuitcase, faHandshakeSimpleSlash, faGear } from '@fortawesome/free-solid-svg-icons'
+import { faHome, faUser, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { NavLink } from 'react-router-dom'
-// Importar a variavel Link, caso usar a tag "Link"
 
 const Sidebar = () => {
   return (
     <div className="nav-bar">
-      {/* <Link className="logo" to="/">
-        <img src={LogoS} alt="Logo" />
-        <img className="sub-logo" src={LogoSubtitle} alt="slobodan" />
-      </Link> */}
       <nav>
-        <NavLink exact="true" activeclassname="active" to="/">
+
+        <NavLink exact="true" activeClassName="active" to="/">
           <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
         </NavLink>
-        <NavLink activeclassname="active" className="about-link" to="/about">
+        <NavLink activeClassName="active" className="about-link" to="/about">
           <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
         </NavLink>
-        <NavLink activeclassname="active" className="skills-link" to="/skills">
+        {/* <NavLink activeClassName="active" className="skills-link" to="/skills">
           <FontAwesomeIcon icon={faGear} color="#4d4d4e" />
-        </NavLink>
-        {/* <NavLink activeclassname="active" className="portfolio-link" to="/portfolio">
-          <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
         </NavLink> */}
-        <NavLink
-          activeclassname="active"
+        {/* <NavLink
+          activeClassName="active"
           className="contact-link"
-          to="/contact"
+          to="https://api.whatsapp.com/send?phone=5555999660677&text=Ol%C3%A1%20Kelvin,%20vim%20pelo%20seu%20portf%C3%B3lio!%0A%0A"
         >
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
-        </NavLink>
+        </NavLink> */}
       </nav>
       <ul>
         <li>

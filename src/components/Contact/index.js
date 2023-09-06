@@ -4,16 +4,21 @@ import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
+import Sidebar from '../Sidebar'
 
-const Contact = () => {
+export const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
   const form = useRef()
 
   useEffect(() => {
-    return setTimeout(() => {
+    const timerId = setTimeout(() => {
       setLetterClass('text-animate-hover')
-    }, 3000)
-  }, [])
+    }, 300)
+
+    return () => {
+      clearTimeout(timerId);
+    };
+  }, []);
 
   const sendEmail = (e) => {
     e.preventDefault()
@@ -38,6 +43,7 @@ const Contact = () => {
 
   return (
     <>
+      <Sidebar />
       <div className="container contact-page">
         <div className="text-zone">
           <h1>
@@ -80,5 +86,3 @@ const Contact = () => {
     </>
   )
 }
-
-export default Contact

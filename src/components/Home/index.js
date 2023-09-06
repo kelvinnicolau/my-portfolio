@@ -2,14 +2,14 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
-// import LogoTitle from '../../assets/images/logo-s.png'
 import Logo from './Logo'
 import './index.scss'
+import Sidebar from '../Sidebar'
 
-const Home = () => {
+export const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
-  const nameArray = [' ','K', 'e', 'l', 'v', 'i', 'n',' ','N','i','c','o','l','a','u']
+  const nameArray = [' ', 'K', 'e', 'l', 'v', 'i', 'n', ' ', 'N', 'i', 'c', 'o', 'l', 'a', 'u']
   const jobArray = [
     'S',
     'o',
@@ -32,13 +32,18 @@ const Home = () => {
   ]
 
   useEffect(() => {
-    return setTimeout(() => {
+    const timerId = setTimeout(() => {
       setLetterClass('text-animate-hover')
-    }, 4000)
-  }, [])
+    }, 200)
+
+    return () => {
+      clearTimeout(timerId);
+    };
+  }, []);
 
   return (
-    <>
+    <div>
+      <Sidebar />
       <div className="container home-page">
         <div className="text-zone">
           <h1>
@@ -60,7 +65,7 @@ const Home = () => {
             />
           </h1>
           <h2>Front End Developer | Back End Developer</h2>
-          <Link to="/contact" className="flat-button">
+          <Link to="https://api.whatsapp.com/send?phone=5555999660677&text=Ol%C3%A1%20Kelvin,%20vim%20pelo%20seu%20portf%C3%B3lio!%0A%0A" className="flat-button">
             CONTACT ME
           </Link>
         </div>
@@ -68,8 +73,7 @@ const Home = () => {
       </div>
 
       <Loader type="pacman" />
-    </>
+    </div>
   )
 }
 
-export default Home
