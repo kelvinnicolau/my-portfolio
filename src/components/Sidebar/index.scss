@@ -84,6 +84,12 @@
       }
     }
 
+    a.projects {
+      &:after {
+        content: 'PROJECTS';
+      }
+    }
+
     a.skills-link {
       &:after {
         content: 'SKILLS';
