@@ -1,6 +1,6 @@
 .nav-bar {
   background: #181818;
-  width: 60px;
+  width: 80px;
   height: 100%;
   position: absolute;
   top: 0;
@@ -84,27 +84,15 @@
       }
     }
 
+    a.portfolio {
+      &:after {
+        content: 'CUSTOMERS';
+      }
+    }
+
     a.projects {
       &:after {
         content: 'PROJECTS';
-      }
-    }
-
-    a.skills-link {
-      &:after {
-        content: 'SKILLS';
-      }
-    }
-
-    a.contact-link {
-      &:after {
-        content: 'CONTACT';
-      }
-    }
-
-    a.portfolio-link {
-      &:after {
-        content: 'PORTFOLIO';
       }
     }
 
