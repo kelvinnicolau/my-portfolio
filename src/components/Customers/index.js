@@ -9,9 +9,9 @@ export const Customers = () => {
     return (
         <div>
             <div className='container-customers'>
-                <h2>
+                {/* <h2>
                     Companies and Customers served:
-                </h2>
+                </h2> */}
                 <div className='container-cards'>
                     <Link to={'https://www.neoway.com.br/'} target='_blank'>
                         <div className='card-link'>

@@ -14,8 +14,15 @@ a {
     text-decoration: unset;
 }
 
-img {
-    height: 200px;
+.container.projects-page h1 {
+    font-size: 53px;
+    font-family: "Coolvetica";
+    color: #ffd700;
+    font-weight: 400;
+    margin-top: 0;
+    position: relative;
+    margin-bottom: 40px;
+    left: -10px;
 }
 
 .container-cards {
@@ -40,8 +47,34 @@ img {
 .img-card {
     border-radius: 12px 12px 0 0;
     width: 100%;   
+    height: 200px;
 }
 
 .text-card {
     text-align: center;
+}
+
+@media (max-width: 700px) {
+
+    .projects-page .text-zone {
+        position: absolute;
+        transform: translateY(-50%);
+        vertical-align: middle;
+        display: table-cell;
+        max-height: 90%;
+        left: 30% !important;
+        top: 30% !important;
+        width: 65% !important;
+    }
+
+    h1 {
+        font-size: 36px !important;
+        left: 10px;
+    }
+
+    .card-link {
+        width: 260px;
+        height: 250px;
+    }
+
 }

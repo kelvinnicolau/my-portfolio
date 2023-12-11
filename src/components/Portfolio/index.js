@@ -9,7 +9,7 @@ export const Portfolio = () => {
 
   const [letterClass, setLetterClass] = useState('text-animate')
 
-  const titleAbout = ['C', 'u', 's', 't', 'o', 'm', 'e', 'r', 's',' ',]
+  const titleCustomers = ['C', 'u', 's', 't', 'o', 'm', 'e', 'r', 's',' ',]
 
   useEffect(() => {
     const timerId = setTimeout(() => {
@@ -24,13 +24,13 @@ export const Portfolio = () => {
   return (
     <div>
       <Sidebar />
-      <div className="container about-page">
+      <div className="container customers-page">
         <div className="text-zone">
 
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={titleAbout}
+              strArray={titleCustomers}
               idx={15}
             />
           </h1>
