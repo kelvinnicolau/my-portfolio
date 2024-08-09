@@ -22,12 +22,12 @@ export const About = () => {
     const timerId = setTimeout(() => {
       setLetterClass('text-animate-hover')
     }, 200)
-  
+
     return () => {
       clearTimeout(timerId);
     };
   }, []);
-  
+
 
   return (
     <div>
@@ -42,13 +42,20 @@ export const About = () => {
             />
           </h1>
           <p>
-          I am currently a Full Software Engineer at GH Branding, where I work and have participated in several projects for clients such as Neoway, Qintess, BASF, CNA Construtora, MID Falconi and São José, solving problems both as front-end and back-end.
+            Bachelor in Computer Science from URI
+            Santo Ângelo and currently working at GH Brandtech. During my
+            journey, I contributed to significant projects, including the
+            development of an Intranet using Concrete CMS and the creation
+            of several websites and landing pages, using technologies such
+            as HTML, CSS, PHP, Laravel, JavaScript, MySQL, React,
+            Typescript, NodeJS, WordPress and Docker.
           </p>
           <p align="LEFT">
-          I am a very confident and ambitious person. I enjoy working in a group and moving situations forward to help the group as much as possible.
-          </p>
-          <p>
-          If I needed to define myself in one sentence, it would be a calm person, who thinks positively, likes to play sports and always wants to be evolving.
+            I specialize in Front-End development, focusing on refining
+            design and interactivity to provide exceptional experiences for
+            users. I have experience in agile methodologies such as Scrum
+            and Kanban. I am always looking to learn and grow
+            professionally.
           </p>
         </div>
 
