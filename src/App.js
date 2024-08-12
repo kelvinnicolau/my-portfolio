@@ -1,25 +1,25 @@
-import './App.scss'
+import './App.scss';
 import { Route, Routes } from 'react-router-dom';
-import { Home } from './components/Home'
-import { About } from './components/About'
-import { Layout } from './components/Layout'
-import { Portfolio } from './components/Portfolio';
+import { Home } from './components/Home';
+import { About } from './components/About';
+import { Layout } from './components/Layout';
 import { Projects } from './components/Projects';
+import ProjectsLayout from './components/ProjectsLayout';
 
 function App() {
   return (
     <div>
-       <Routes>
+      <Routes>
         <Route element={<Layout />}>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
-          <Route path='/portfolio' element={<Portfolio />} />
+        </Route>
+        <Route element={<ProjectsLayout />}>
           <Route path='/projects' element={<Projects />} />
-          {/* <Route path='/contact' element={<Contact />} /> */}
         </Route>
       </Routes>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

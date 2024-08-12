@@ -65,7 +65,7 @@ export const Home = () => {
             />
           </h1>
           <h2>Front End Developer | Back End Developer</h2>
-          <Link to="https://api.whatsapp.com/send?phone=5555999660677&text=Ol%C3%A1%20Kelvin,%20vim%20pelo%20seu%20portf%C3%B3lio!%0A%0A" className="flat-button">
+          <Link to="https://api.whatsapp.com/send?phone=5555999660677&text=Ol%C3%A1%20Kelvin,%20vim%20pelo%20seu%20portf%C3%B3lio!%0A%0A" target='_blank' className="flat-button">
             CONTACT ME
           </Link>
         </div>

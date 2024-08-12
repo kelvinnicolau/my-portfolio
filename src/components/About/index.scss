@@ -2,7 +2,6 @@
   width: 50%;
   height: 100%;
   top: 0;
-  padding-top: 18%;
   margin-left: 0;
   position: absolute;
   right: 0;
@@ -15,6 +14,7 @@ p {
 }
 
 .cubespinner {
+  margin-top: 200px;
   animation-name: spincube;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
@@ -104,6 +104,10 @@ p {
 
   .stage-cube-cont {
     width: 80%;
+  }
+
+  .cubespinner {
+    margin-top: 60px;
   }
 
   .about-page {
