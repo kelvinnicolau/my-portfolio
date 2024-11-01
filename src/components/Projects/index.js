@@ -15,6 +15,12 @@ import CasaSolidaria from '../../assets/images/casa-solidaria.png'
 import Bamberg from '../../assets/images/bamberg.png'
 import GrupoFront from '../../assets/images/grupo-front.png'
 import RHM from '../../assets/images/rhm.png'
+import Cobmais from '../../assets/images/cobmais.png'
+import BMS from '../../assets/images/bms.png'
+import MAC from '../../assets/images/mac.png'
+import Binario from '../../assets/images/binario.png'
+import Okser from '../../assets/images/okser.png'
+import Qualyteam from '../../assets/images/qualyteam.png'
 
 
 export const Projects = () => {
@@ -47,6 +53,54 @@ export const Projects = () => {
                         />
                     </h1>
                     <div className='container-cards'>
+                        <Link to={'https://qualyteam.com/pb/'} target='_blank'>
+                            <div className='card-link'>
+                                <img className='img-card' src={Qualyteam} alt='qualyteam' />
+                                <div className='text-card'>
+                                    <h3>Qualyteam</h3>
+                                </div>
+                            </div>
+                        </Link>
+                        <Link to={'https://okser.com.br/'} target='_blank'>
+                            <div className='card-link'>
+                                <img className='img-card' src={Okser} alt='okser' />
+                                <div className='text-card'>
+                                    <h3>Okser</h3>
+                                </div>
+                            </div>
+                        </Link>
+                        <Link to={'https://binario.cloud/'} target='_blank'>
+                            <div className='card-link'>
+                                <img className='img-card' src={Binario} alt='binario' />
+                                <div className='text-card'>
+                                    <h3>Binario</h3>
+                                </div>
+                            </div>
+                        </Link>
+                        <Link to={'https://museumaccg.org.br/'} target='_blank'>
+                            <div className='card-link'>
+                                <img className='img-card' src={MAC} alt='mac' />
+                                <div className='text-card'>
+                                    <h3>MAC</h3>
+                                </div>
+                            </div>
+                        </Link>
+                        <Link to={'https://bmsprojetos.com/'} target='_blank'>
+                            <div className='card-link'>
+                                <img className='img-card' src={BMS} alt='BMS' />
+                                <div className='text-card'>
+                                    <h3>BMS Consultoria Tributária</h3>
+                                </div>
+                            </div>
+                        </Link>
+                        <Link to={'https://www.cobmais.com.br/'} target='_blank'>
+                            <div className='card-link'>
+                                <img className='img-card' src={Cobmais} alt='Cobmais' />
+                                <div className='text-card'>
+                                    <h3>Cobmais</h3>
+                                </div>
+                            </div>
+                        </Link>
                         <Link to={'https://rhmbalancas.com/'} target='_blank'>
                             <div className='card-link'>
                                 <img className='img-card' src={RHM} alt='RHM' />
