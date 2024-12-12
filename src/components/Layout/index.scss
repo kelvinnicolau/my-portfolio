@@ -112,3 +112,11 @@
     }
   }
 }
+
+@media(max-width:767px){
+  .top-tags,
+  .bottom-tags,
+  .bottom-tag-html {
+    display: none;
+  }
+}
