@@ -56,7 +56,7 @@ export const Projects = () => {
               <div className="card-link">
                 <img className="img-card" src={Coris} alt="Coris" />
                 <div className="text-card">
-                  <h3>Coris Seguro Viagem</h3>
+                  <h3>Coris Seguro Viagem </h3>
                 </div>
               </div>
             </Link>
