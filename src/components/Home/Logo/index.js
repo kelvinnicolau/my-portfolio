@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react'
 import gsap from 'gsap-trial'
-import LogoS from '../../../assets/images/Eu-two.png'
+import Kelvin from '../../../assets/images/kelvin.png'
 import './index.scss'
 
 const Logo = () => {
@@ -9,7 +9,6 @@ const Logo = () => {
   const solidLogoRef = useRef()
 
   useEffect(() => {
-
     gsap
       .timeline()
       .to(bgRef.current, {
@@ -39,7 +38,7 @@ const Logo = () => {
       <img
         className="solid-logo"
         ref={solidLogoRef}
-        src={LogoS}
+        src={Kelvin}
         alt="JavaScript,  Developer"
       />
     </div>
