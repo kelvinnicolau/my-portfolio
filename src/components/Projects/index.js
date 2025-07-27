@@ -175,14 +175,12 @@ export const Projects = () => {
                 </div>
               </div>
             </Link>
-            <Link to={'https://nutrihelpia.com/'} target="_blank">
-              <div className="card-link">
-                <img className="img-card" src={NutriHelp} alt="NutriHelpIA" />
-                <div className="text-card">
-                  <h3>NutriHelpIA</h3>
-                </div>
+            <div className="card-link">
+              <img className="img-card" src={NutriHelp} alt="NutriHelpIA" />
+              <div className="text-card">
+                <h3>NutriHelpIA</h3>
               </div>
-            </Link>
+            </div>
             <Link to={'https://industrialbecker.com.br/'} target="_blank">
               <div className="card-link">
                 <img
@@ -203,14 +201,12 @@ export const Projects = () => {
                 </div>
               </div>
             </Link>
-            <Link to={'https://qintess.com/'} target="_blank">
-              <div className="card-link">
-                <img className="img-card" src={Qintess} alt="Qintess" />
-                <div className="text-card">
-                  <h3>Qintess</h3>
-                </div>
+            <div className="card-link">
+              <img className="img-card" src={Qintess} alt="Qintess" />
+              <div className="text-card">
+                <h3>Qintess</h3>
               </div>
-            </Link>
+            </div>
             <Link to={'https://www.maiomarketing.com.br/'} target="_blank">
               <div className="card-link">
                 <img className="img-card" src={Maio} alt="Maio Marketing" />

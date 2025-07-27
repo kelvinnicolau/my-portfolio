@@ -43,11 +43,11 @@ export const About = () => {
           </h1>
           <p>
             Bachelor in Computer Science from URI
-            Santo Ângelo and currently working at GH Brandtech. During my
+            Santo Ângelo and currently working at BASE Digital. During my
             journey, I contributed to significant projects, including the
             development of an Intranet using Concrete CMS and the creation
             of several websites and landing pages, using technologies such
-            as HTML, CSS, PHP, Laravel, JavaScript, MySQL, React,
+            as HTML, CSS, PHP, Laravel, JavaScript, MySQL, React, NextJS,
             Typescript, NodeJS, WordPress and Docker.
           </p>
           <p align="LEFT">

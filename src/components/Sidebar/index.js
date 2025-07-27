@@ -13,7 +13,7 @@ const Sidebar = () => {
     <div className="nav-bar">
       <nav>
 
-        <NavLink exact="true" activeClassName="active" to="/">
+        <NavLink exact="true" activeClassName="active" to="/home">
           <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
         </NavLink>
         <NavLink activeClassName="active" className="about-link" to="/about">
