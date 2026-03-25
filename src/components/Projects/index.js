@@ -24,6 +24,8 @@ import Qualyteam from '../../assets/images/qualyteam.png'
 import Coris from '../../assets/images/coris-seguro.png'
 import Carpenedo from '../../assets/images/carpenedo-e-dutra.png'
 import Holus from '../../assets/images/estudio-holus.png'
+import Liberali from '../../assets/images/liberali-site.png'
+import Canabarro from '../../assets/images/canabarro-site.png'
 
 export const Projects = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -53,6 +55,22 @@ export const Projects = () => {
             />
           </h1>
           <div className="container-cards">
+            <Link to={'https://liberaliarquitetura.com.br/'} target="_blank">
+              <div className="card-link">
+                <img className="img-card" src={Liberali} alt="Liberali" />
+                <div className="text-card">
+                  <h3>Liberali Arquitetura</h3>
+                </div>
+              </div>
+            </Link>
+            <Link to={'https://canabarroebeirith.com.br/'} target="_blank">
+              <div className="card-link">
+                <img className="img-card" src={Canabarro} alt="Canabarro & Beirith" />
+                <div className="text-card">
+                  <h3>Canabarro & Beirith</h3>
+                </div>
+              </div>
+            </Link>
             <Link to={'https://estudioholus.com.br/'} target="_blank">
               <div className="card-link">
                 <img className="img-card" src={Holus} alt="Holus" />
