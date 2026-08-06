@@ -26,6 +26,7 @@ import Carpenedo from '../../assets/images/carpenedo-e-dutra.png'
 import Holus from '../../assets/images/estudio-holus.png'
 import Liberali from '../../assets/images/liberali-site.png'
 import Canabarro from '../../assets/images/canabarro-site.png'
+import ClinicaDonadel from '../../assets/images/clinica-donadel.png'
 
 export const Projects = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -55,6 +56,18 @@ export const Projects = () => {
             />
           </h1>
           <div className="container-cards">
+            <Link to={'https://clinicadonadel.com.br/'} target="_blank">
+              <div className="card-link">
+                <img
+                  className="img-card"
+                  src={ClinicaDonadel}
+                  alt="Clínica Donadel"
+                />
+                <div className="text-card">
+                  <h3>Clínica Donadel</h3>
+                </div>
+              </div>
+            </Link>
             <Link to={'https://liberaliarquitetura.com.br/'} target="_blank">
               <div className="card-link">
                 <img className="img-card" src={Liberali} alt="Liberali" />
