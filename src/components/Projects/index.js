@@ -27,6 +27,8 @@ import Holus from '../../assets/images/estudio-holus.png'
 import Liberali from '../../assets/images/liberali-site.png'
 import Canabarro from '../../assets/images/canabarro-site.png'
 import ClinicaDonadel from '../../assets/images/clinica-donadel.png'
+import DrMauricioRomano from '../../assets/images/dr-mauricio-romano.png'
+import InstitutoRomano from '../../assets/images/instituto-romano.png'
 
 export const Projects = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -56,6 +58,30 @@ export const Projects = () => {
             />
           </h1>
           <div className="container-cards">
+            <Link to={'https://drmauricioromano.com.br/'} target="_blank">
+              <div className="card-link">
+                <img
+                  className="img-card"
+                  src={DrMauricioRomano}
+                  alt="Dr. Maurício Romano"
+                />
+                <div className="text-card">
+                  <h3>Dr. Maurício Romano</h3>
+                </div>
+              </div>
+            </Link>
+            <Link to={'https://institutoromano.com.br/'} target="_blank">
+              <div className="card-link">
+                <img
+                  className="img-card"
+                  src={InstitutoRomano}
+                  alt="Instituto Romano"
+                />
+                <div className="text-card">
+                  <h3>Instituto Romano</h3>
+                </div>
+              </div>
+            </Link>
             <Link to={'https://clinicadonadel.com.br/'} target="_blank">
               <div className="card-link">
                 <img
