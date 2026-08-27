@@ -30,7 +30,7 @@ import ClinicaDonadel from '../../assets/images/clinica-donadel.png'
 import DrMauricioRomano from '../../assets/images/dr-mauricio-romano.png'
 import InstitutoRomano from '../../assets/images/instituto-romano.png'
 import PrimeMode from '../../assets/images/prime.png'
-import ClubeShelter from '../../assets/images/clube.png'
+// import ClubeShelter from '../../assets/images/clube.png'
 
 export const Projects = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -71,7 +71,7 @@ export const Projects = () => {
                 </div>
               </div>
             </Link>
-            <Link to={'https://clubeshelter.com.br/clube'} target="_blank">
+            {/* <Link to={'https://clubeshelter.com.br/clube'} target="_blank">
               <div className="card-link">
                 <img
                   className="img-card"
@@ -82,7 +82,7 @@ export const Projects = () => {
                   <h3>Clube Shelter</h3>
                 </div>
               </div>
-            </Link>
+            </Link> */}
             <Link to={'https://drmauricioromano.com.br/'} target="_blank">
               <div className="card-link">
                 <img
