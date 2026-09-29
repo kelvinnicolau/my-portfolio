@@ -31,6 +31,7 @@ import DrMauricioRomano from '../../assets/images/dr-mauricio-romano.png'
 import InstitutoRomano from '../../assets/images/instituto-romano.png'
 import PrimeMode from '../../assets/images/prime.png'
 // import ClubeShelter from '../../assets/images/clube.png'
+import MiltonSulzbach from '../../assets/images/milton.png'
 
 export const Projects = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -60,6 +61,18 @@ export const Projects = () => {
             />
           </h1>
           <div className="container-cards">
+            <Link to={'https://advmiltonsulzbach.com.br/'} target="_blank">
+              <div className="card-link">
+                <img
+                  className="img-card"
+                  src={MiltonSulzbach}
+                  alt="Dr. Milton Sulzbach"
+                />
+                <div className="text-card">
+                  <h3>Dr. Milton Sulzbach</h3>
+                </div>
+              </div>
+            </Link>
             <Link
               to={'https://powderblue-mantis-808357.hostingersite.com/'}
               target="_blank"
